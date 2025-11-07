@@ -1,0 +1,144 @@
+/* Page ka main background, image jaisa halka grey */
+.dashboard-page {
+  padding: 30px;
+  background-color: #f4f7f6;
+  min-height: 90vh; /* Screen bhar dega */
+  font-family: Arial, sans-serif;
+}
+
+/* Image jaisa "Card" (white box) design */
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Event create karne waala form */
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-button {
+  padding: 10px 20px;
+  background-color: #6C63FF; /* Login page jaisa button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  height: 42px; /* Input ke barabar */
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #574de2;
+}
+
+.error-message {
+  color: red;
+  width: 100%;
+}
+
+/* Aapke events ki list */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease;
+}
+
+.event-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-details p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.event-details p strong {
+  color: #333;
+}
+
+.event-status {
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+/* Status ke liye alag colors */
+.status-BUSY {
+  background-color: #f0f0f0;
+  color: #555;
+}
+.status-SWAPPABLE {
+  background-color: #e6f7ff;
+  color: #0056b3;
+}
+.status-SWAP_PENDING {
+  background-color: #fffbe6;
+  color: #d48806;
+}
+
+.event-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.event-actions .busy-button {
+  background-color: #6c757d;
+}
+
+.event-actions .pending-text {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+}

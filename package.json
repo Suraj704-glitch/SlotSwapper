@@ -1,0 +1,15 @@
+{
+  "name": "slotswapper",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\""
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

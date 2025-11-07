@@ -1,0 +1,135 @@
+/* We'll wrap the whole page in a flex container */
+.login-page-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left "Promo" Panel */
+.promo-panel {
+  flex: 1;
+  background-color: #4A47A3; /* Dark blue/purple from image */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.promo-panel h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.promo-panel p {
+  font-size: 1.1rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Right "Form" Panel */
+.form-panel {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container form div {
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container .form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Important for padding to work */
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  font-size: 0.9em;
+  color: #6C63FF;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6C63FF; /* Bright purple button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #574de2;
+}
+
+.form-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #6C63FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Make it responsive - stack panels on small screens */
+@media (max-width: 768px) {
+  .login-page-container {
+    flex-direction: column;
+  }
+  
+  .promo-panel {
+    min-height: 200px;
+    flex: auto;
+  }
+}
+
+.error-message {
+  color: red;
+  background-color: #ffe8e8;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
